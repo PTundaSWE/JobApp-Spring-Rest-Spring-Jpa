@@ -13,7 +13,7 @@ public class JobService {
     @Autowired
     private JobRepo jobRepo;
 
-    public void addJob(JobPost jobPost) {
+    /*public void addJob(JobPost jobPost) {
         jobRepo.addJob(jobPost);
     }
 
@@ -31,5 +31,5 @@ public class JobService {
 
     public void deleteJobById(int postId) {
         jobRepo.deleteJobById(postId);
-    }
+    }*/
 }

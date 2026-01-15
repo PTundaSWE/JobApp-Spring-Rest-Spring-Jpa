@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 public class JobRestController {
-    @Autowired
+    /*@Autowired
     private JobService jobService;
 
     @GetMapping("/jobPosts")
@@ -39,5 +39,5 @@ public class JobRestController {
     public String deleteJobById(@PathVariable("postId") int postId) {
         jobService.deleteJobById(postId);
         return "Delete Job Successfully";
-    }
+    }*/
 }
