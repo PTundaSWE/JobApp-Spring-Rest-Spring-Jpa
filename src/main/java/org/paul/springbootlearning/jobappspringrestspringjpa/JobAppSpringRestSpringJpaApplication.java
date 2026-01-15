@@ -59,7 +59,12 @@ public class JobAppSpringRestSpringJpaApplication {
         jobPost6.setReqExperience(4);
         jobPost6.setPostTechStack(List.of("DevOps", "CI/CD", "Docker", "Kubernetes"));
 
-        repo.save(jobPost1);
+        // repo.save(jobPost1);
+        repo.save(jobPost2);
+        repo.save(jobPost3);
+        repo.save(jobPost4);
+        repo.save(jobPost5);
+        repo.save(jobPost6);
 
     }
 
