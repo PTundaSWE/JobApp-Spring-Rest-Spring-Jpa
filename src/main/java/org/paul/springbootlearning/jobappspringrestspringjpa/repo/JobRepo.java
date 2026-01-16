@@ -10,10 +10,10 @@ import java.util.List;
 @Repository
 public interface JobRepo extends JpaRepository<JobPost, Integer> {
 
-    /*@Query("select j from JobPost j")
+    @Query("select j from JobPost j")
     List<JobPost> findAllJobPosts();
 
-    void addJob(JobPost jobPost);
+    /*void addJob(JobPost jobPost);
 
     JobPost findJobPostByPostId(int postId);
 

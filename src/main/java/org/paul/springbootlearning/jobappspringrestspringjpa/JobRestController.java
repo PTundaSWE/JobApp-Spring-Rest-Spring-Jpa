@@ -9,13 +9,13 @@ import java.util.List;
 
 @RestController
 public class JobRestController {
-    /*@Autowired
+    @Autowired
     private JobService jobService;
 
     @GetMapping("/jobPosts")
     public List<JobPost> findAllJobPosts() {
         return jobService.findAllJobPosts();
-    }*/
+    }
 
     /*@GetMapping("/jobPosts/{postId}")
     public JobPost getJobById(@PathVariable("postId") int postId) {
@@ -23,7 +23,7 @@ public class JobRestController {
     }
 
 
-    @PostMapping("/jobPosts")
+    /*@PostMapping("/jobPosts")
     public JobPost addJob(@RequestBody JobPost jobPost) {
         jobService.addJob(jobPost);
         return jobPost;

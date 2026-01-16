@@ -17,9 +17,9 @@ public class JobService {
         jobRepo.addJob(jobPost);
     }*/
 
-    /*public List<JobPost> findAllJobPosts() {
+    public List<JobPost> findAllJobPosts() {
         return jobRepo.findAllJobPosts();
-    }*/
+    }
 
     /*public JobPost getJobById(int postId) {
         return jobRepo.getJobById(postId);
