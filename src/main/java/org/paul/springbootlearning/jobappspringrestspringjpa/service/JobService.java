@@ -15,13 +15,13 @@ public class JobService {
 
     /*public void addJob(JobPost jobPost) {
         jobRepo.addJob(jobPost);
-    }
+    }*/
 
-    public List<JobPost> getAllJobs() {
-        return jobRepo.getAllJobs();
-    }
+    /*public List<JobPost> findAllJobPosts() {
+        return jobRepo.findAllJobPosts();
+    }*/
 
-    public JobPost getJobById(int postId) {
+    /*public JobPost getJobById(int postId) {
         return jobRepo.getJobById(postId);
     }
 

@@ -13,11 +13,11 @@ public class JobRestController {
     private JobService jobService;
 
     @GetMapping("/jobPosts")
-    public List<JobPost> getAllJobs() {
-        return jobService.getAllJobs();
-    }
+    public List<JobPost> findAllJobPosts() {
+        return jobService.findAllJobPosts();
+    }*/
 
-    @GetMapping("/jobPosts/{postId}")
+    /*@GetMapping("/jobPosts/{postId}")
     public JobPost getJobById(@PathVariable("postId") int postId) {
         return jobService.getJobById(postId);
     }
