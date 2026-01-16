@@ -30,13 +30,13 @@ public class JobRestController {
         return jobPost;
     }
 
-    /*@PutMapping("/jobPosts")
-    public JobPost updateJob(@RequestBody JobPost jobPost) {
-        jobService.updateJob(jobPost);
+    @PutMapping("/jobPosts")
+    public JobPost updateJobPost(@RequestBody JobPost jobPost) {
+        jobService.updateJobPost(jobPost);
         return jobPost;
     }
 
-    @DeleteMapping("/jobPosts/{postId}")
+    /*@DeleteMapping("/jobPosts/{postId}")
     public String deleteJobById(@PathVariable("postId") int postId) {
         jobService.deleteJobById(postId);
         return "Delete Job Successfully";

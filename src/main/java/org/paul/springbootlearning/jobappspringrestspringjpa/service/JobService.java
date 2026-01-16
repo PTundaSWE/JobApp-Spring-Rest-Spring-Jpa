@@ -27,11 +27,11 @@ public class JobService {
         jobRepo.save(jobPost);
     }
 
-    /*public void updateJob(JobPost jobPost) {
-        jobRepo.updateJob(jobPost);
+    public void updateJobPost(JobPost jobPost) {
+        jobRepo.save(jobPost);
     }
 
-    public void deleteJobById(int postId) {
+    /*public void deleteJobById(int postId) {
         jobRepo.deleteJobById(postId);
     }*/
 }
