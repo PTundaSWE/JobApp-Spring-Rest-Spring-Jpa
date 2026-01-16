@@ -24,13 +24,13 @@ public class JobRestController {
     }
 
 
-    /*@PostMapping("/jobPosts")
-    public JobPost addJob(@RequestBody JobPost jobPost) {
-        jobService.addJob(jobPost);
+    @PostMapping("/jobPosts")
+    public JobPost addJobPost(@RequestBody JobPost jobPost) {
+        jobService.addJobPost(jobPost);
         return jobPost;
     }
 
-    @PutMapping("/jobPosts")
+    /*@PutMapping("/jobPosts")
     public JobPost updateJob(@RequestBody JobPost jobPost) {
         jobService.updateJob(jobPost);
         return jobPost;

@@ -14,9 +14,6 @@ public class JobService {
     @Autowired
     private JobRepo jobRepo;
 
-    /*public void addJob(JobPost jobPost) {
-        jobRepo.addJob(jobPost);
-    }*/
 
     public List<JobPost> findAllJobPosts() {
         return jobRepo.findAllJobPosts();
@@ -24,6 +21,10 @@ public class JobService {
 
     public Optional<JobPost> findJobPostByPostId(int postId) {
         return jobRepo.findJobPostByPostId(postId);
+    }
+
+    public void addJobPost(JobPost jobPost) {
+        jobRepo.save(jobPost);
     }
 
     /*public void updateJob(JobPost jobPost) {
