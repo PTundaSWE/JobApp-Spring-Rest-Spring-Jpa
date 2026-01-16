@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class JobService {
@@ -21,11 +22,11 @@ public class JobService {
         return jobRepo.findAllJobPosts();
     }
 
-    /*public JobPost getJobById(int postId) {
-        return jobRepo.getJobById(postId);
+    public Optional<JobPost> findJobPostByPostId(int postId) {
+        return jobRepo.findJobPostByPostId(postId);
     }
 
-    public void updateJob(JobPost jobPost) {
+    /*public void updateJob(JobPost jobPost) {
         jobRepo.updateJob(jobPost);
     }
 

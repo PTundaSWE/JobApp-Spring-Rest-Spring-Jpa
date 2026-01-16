@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface JobRepo extends JpaRepository<JobPost, Integer> {
@@ -13,11 +14,15 @@ public interface JobRepo extends JpaRepository<JobPost, Integer> {
     @Query("select j from JobPost j")
     List<JobPost> findAllJobPosts();
 
-    /*void addJob(JobPost jobPost);
+    @Query("select j from JobPost j where j.postId = ?1")
+    Optional<JobPost> findJobPostByPostId(int postId);
 
-    JobPost findJobPostByPostId(int postId);
 
-    void updateJobPost(JobPost jobPost);
+    /*void addJob(JobPost jobPost);*/
+
+
+
+    /*void updateJobPost(JobPost jobPost);
 
     void deleteJobPostByPostId(int postId);*/
 }
