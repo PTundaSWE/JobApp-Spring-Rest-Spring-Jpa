@@ -31,7 +31,7 @@ public class JobService {
         jobRepo.save(jobPost);
     }
 
-    /*public void deleteJobById(int postId) {
-        jobRepo.deleteJobById(postId);
-    }*/
+    public void deleteJobById(int postId) {
+        jobRepo.deleteById(postId);
+    }
 }

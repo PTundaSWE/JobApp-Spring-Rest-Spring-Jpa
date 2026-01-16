@@ -17,5 +17,4 @@ public interface JobRepo extends JpaRepository<JobPost, Integer> {
     @Query("select j from JobPost j where j.postId = ?1")
     Optional<JobPost> findJobPostByPostId(int postId);
 
-    /*void deleteJobPostByPostId(int postId);*/
 }
